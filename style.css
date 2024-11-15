@@ -1,0 +1,128 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'poppins', roboto;
+    box-sizing:border-box;    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background:#fff;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-Items:center;
+
+   
+    
+}
+
+.timeStamps{
+
+    display: flex;
+    justify-content: space-between;
+    color: #EEEEEE;
+
+}
+.music-player{
+    background: #222831;
+    width: 400px;
+    padding: 25px 35px ;
+    text-align: center;
+    box-shadow: 0 10px 60px rgba(2, 53, 28, 0.62);
+    border-radius:30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+
+}
+
+nav .circle{
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    background:#fff;
+    color: #222831;
+    box-shadow: 0 5px 10px rgba(76, 109, 111, 0.5);
+
+}
+
+.song-img{
+    width:220px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgba(76, 109, 111, 0.3);
+}
+
+
+.music-player{
+    font-size: 15px;
+    font-weight:400;
+    color:#EEEEEE;
+    margin-top: 20px;
+}
+
+.music-player p{
+    font-size: 14px;
+    color: #EEEEEE;
+
+}
+
+#progress{
+    appearance:none;
+    width: 100%;
+    height:6px;
+    background: #EEEEEE;
+    border-radius:4px;
+    cursor: pointer;
+    margin: 40px 0;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 20px rgba(76, 109, 111, 0.2);
+
+
+
+}
+
+#progress::-webkit-slider-thumb{
+
+    appearance: none;
+    background: #76ABAE;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 60px rgba(76, 109, 111, 0.5);
+
+}
+.controls{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #76ABAE;
+    box-shadow: 0 10px 20px rgba(76, 109, 111, 0.1);
+    cursor: pointer;
+}
+
+
+.controls div:nth-child(2){
+     transform: scale(1.5);
+        background: #76ABAE;
+        color: #EEEEEE;
+
+}
